@@ -1,0 +1,83 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+main h1 {
+    padding: 5px;
+    font-size: 2.5em;
+}
+
+#valor {
+    padding: 10px;
+    width: 50vw;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#callMist,
+#callOrd {
+    display: inline;
+    background-color: #0d6efd;
+    color: white;
+    width: 75px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+}
+
+#callOrd:hover {
+    background-color: #0a3981;
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+#callMist:hover {
+    background-color: #0a3981;
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+#buttonAdicionar {
+    background-color: #0d6efd;
+    color: white;
+    width: 75px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+}
+
+#buttonAdicionar:hover {
+    background-color: #0a3981;
+    width: 70px;
+    height: 30px;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+#opcoes {
+    width: 50vw;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 8px;
+}
+
+ul > li {
+    margin: 5px;
+    padding: 5px;
+    margin-left: 60px;
+}
+
+main input,
+button {
+    display: block;
+    margin: 10px;
+}

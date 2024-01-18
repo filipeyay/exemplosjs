@@ -1,0 +1,15 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.card-img-top {
+    height: 180px;
+}
+
+.card {
+    margin-right: 15px;
+    margin: 30px;
+}
