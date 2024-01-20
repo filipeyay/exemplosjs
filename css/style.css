@@ -32,17 +32,17 @@ main h1 {
 #callOrd:hover {
     background-color: #0a3981;
     width: 70px;
-    height: 30px;
+    height: 35px;
     border: 1px solid black;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 #callMist:hover {
     background-color: #0a3981;
     width: 70px;
-    height: 30px;
+    height: 35px;
     border: 1px solid black;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 #buttonAdicionar {
@@ -57,9 +57,9 @@ main h1 {
 #buttonAdicionar:hover {
     background-color: #0a3981;
     width: 70px;
-    height: 30px;
+    height: 35px;
     border: 1px solid black;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
 #opcoes {

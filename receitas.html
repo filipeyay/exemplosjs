@@ -35,11 +35,11 @@
                     imagem: "img/comida/coxinhademorango.png",
                     preparo: "Junte o leite condensado, chocolate em pó e manteiga. Aqueça no fogo baixo. Envolva os morangos e passe no granulado.",
                     ingredientes: ["Leite condensado", "Chocolate em Pó", "Manteiga", "Morango", "Chocolate Granulado"]
-                }                
-            ];
+                }
+            ]
             function getListIngredientes(receita) {
                 return '<ul>' +
-                    receita.ingredientes.map(ingrediente => `<li>${ingrediente}</li>`).reduce((acc, curr) => acc + curr, '') + '</ul>';
+                    receita.ingredientes.map(ingrediente => `<li>${ingrediente}</li>`).reduce((acc, curr) => acc + curr, '') + '</ul>'
             }
             function getCard(receita) {
                 return `
@@ -54,21 +54,21 @@
                             </div>
                         </div>
                     </div>
-                `;
+                `
             }
-            let pnlCatalogo = document.getElementById("pnlCatalogo");
+            let pnlCatalogo = document.getElementById("pnlCatalogo")
 
             for (let i = 0; i < receitas.length; i++) {
-                pnlCatalogo.innerHTML += getCard(receitas[i]);
+                pnlCatalogo.innerHTML += getCard(receitas[i])
             }
             function preencheCatalogo() {
-                let pnlCatalogo = document.getElementById("pnlCatalogo");
+                let pnlCatalogo = document.getElementById("pnlCatalogo")
 
-                let catalogoHTML = receitas.map(receita => getCard(receita)).reduce((acc, curr) => acc + curr, '');
+                let catalogoHTML = receitas.map(receita => getCard(receita)).reduce((acc, curr) => acc + curr, '')
 
-                pnlCatalogo.innerHTML = catalogoHTML;
+                pnlCatalogo.innerHTML = catalogoHTML
             }
-            document.body.onload = preencheCatalogo;
+            document.body.onload = preencheCatalogo
         </script>
     </main>
 </body>

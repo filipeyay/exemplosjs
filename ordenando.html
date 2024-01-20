@@ -41,53 +41,53 @@
 
         buttonAdd.addEventListener('click', add)
         function add() {
-            let node = document.createElement('li');
-            node.innerText = inputValor.value;
-            listaDeVal.appendChild(node);
-            inputValor.value = '';
-            inputValor.focus();
+            let node = document.createElement('li')
+            node.innerText = inputValor.value
+            listaDeVal.appendChild(node)
+            inputValor.value = ''
+            inputValor.focus()
         }
 
         buttonOrd.addEventListener('click', ordenar)
         function ordenar() {
-            const valoresNodes = listaDeVal.children;
-            const vetorDeVal = [];
+            const valoresNodes = listaDeVal.children
+            const vetorDeVal = []
 
             for (let i = 0; i < valoresNodes.length; i++) {
-                vetorDeVal.push(parseInt(valoresNodes[i].textContent));
+                vetorDeVal.push(parseInt(valoresNodes[i].textContent))
             }
-            const indiceSelecionado = listaDeSelecao.selectedIndex;
-            let vetorOrdenado;
+            const indiceSelecionado = listaDeSelecao.selectedIndex
+            let vetorOrdenado
 
             switch (indiceSelecionado) {
                 case 0:
-                    vetorOrdenado = bubble_sort(vetorDeVal);
-                    break;
+                    vetorOrdenado = bubble_sort(vetorDeVal)
+                    break
                 case 1:
-                    vetorOrdenado = selection_sort(vetorDeVal);
+                    vetorOrdenado = selection_sort(vetorDeVal)
                 case 2:
-                    vetorOrdenado = quick_sort(vetorDeVal);
-                    break;
+                    vetorOrdenado = quick_sort(vetorDeVal)
+                    break
                 default:
-                    console.log("Opção invalida!");
-                    vetorOrdenado = [];
+                    console.log("Opção invalida!")
+                    vetorOrdenado = []
                     break
             }
-            listaDeVal.innerHTML = vetorOrdenado.length > 0 ? vetorOrdenado.map(valor => `<li>${valor}</li>`).join(''): '';
+            listaDeVal.innerHTML = vetorOrdenado.length > 0 ? vetorOrdenado.map(valor => `<li>${valor}</li>`).join(''): ''
         }
         buttonMist.addEventListener('click', misturar)
         function misturar() {
-            const valoresNodes = listaDeVal.children;
-            const vetorDeVal = [];
+            const valoresNodes = listaDeVal.children
+            const vetorDeVal = []
             for (let i = 0; i < valoresNodes.length; i++) {
-                vetorDeVal.push(parseInt(valoresNodes[i].textContent));
+                vetorDeVal.push(parseInt(valoresNodes[i].textContent))
             }
-            const indiceSelecionado = listaDeSelecao.selectedIndex;
-            let vetorOrdenado;
-            shuffle(vetorDeVal, vetorDeVal.length);
-            listaDeVal.innerHTML = vetorDeVal.map(valor => `<li>${valor}</li>`).join('');
+            const indiceSelecionado = listaDeSelecao.selectedIndex
+            let vetorOrdenado
+            shuffle(vetorDeVal, vetorDeVal.length)
+            listaDeVal.innerHTML = vetorDeVal.map(valor => `<li>${valor}</li>`).join('')
 
-            listaDeVal.innerHTML = vetorDeVal.map(valor => `<li>${valor}</li>`).join('');
+            listaDeVal.innerHTML = vetorDeVal.map(valor => `<li>${valor}</li>`).join('')
         }
     </script>
 </body>
